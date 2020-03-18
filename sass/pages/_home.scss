@@ -1,0 +1,30 @@
+.section-about {
+  background-color: $lightGrey;
+  padding: 15rem;
+  margin-top: -20vh;
+  .header-secondary {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(to right, $lightGreen, $darkGreen);
+    -webkit-background-clip: text;
+    color: transparent;
+
+    &:hover {
+      transform: skewY(2deg) skewY(2deg);
+      text-shadow: 0.5rem 1rem 3rem rgba($darkText, 0.4);
+    }
+  }
+}
+
+.section-features {
+  padding: 15rem 0;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($lightGreen, 0.8),
+      rgba($darkGreen, 0.8)
+    ),
+    url("../img/nat-4.jpg");
+  background-size: cover;
+  transform: skewY(-7deg);
+}
