@@ -48,9 +48,13 @@
     -webkit-background-clip: text;
     color: transparent;
   }
-  &:hover{
+  &:hover {
     transform: translateY(-1.5rem) scale(1.03);
   }
- 
+}
 
+.section-tours{
+  background-color: $mainWhite;
+  padding:20rem 0 15rem 0rem;
+  margin-top: -10rem;
 }

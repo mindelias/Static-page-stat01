@@ -9,6 +9,7 @@
 
 @import "components/button";
 @import "components/compositions";
+@import "components/cards.scss";
 
 @import "layout/grid";
 @import "pages/home";
@@ -42,7 +43,7 @@ body {
   background-image: linear-gradient(
       to right bottom,
       rgba($lightGreen, 0.8),
-      rgba($darkGreen, 0.8)
+      rgba($darkGreen, 0.6)
     ),
     url("../img/hero.jpg");
   background-size: cover;

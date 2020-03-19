@@ -19,12 +19,16 @@
 
 .section-features {
   padding: 15rem 0;
+  margin-top: -10rem;
   background-image: linear-gradient(
       to right bottom,
       rgba($lightGreen, 0.8),
-      rgba($darkGreen, 0.8)
+      rgba($darkGreen, 0.6)
     ),
     url("../img/nat-4.jpg");
   background-size: cover;
   transform: skewY(-7deg);
+  & > * {
+    transform: skewY(7deg);
+  }
 }
