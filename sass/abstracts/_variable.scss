@@ -2,15 +2,22 @@
 $lightGreen: #7ed56f;
 $mediumGreen: #55c57a;
 $darkGreen: #28b485;
+$brightOrange: #ffb900;
+$darkOrange: #ff7730;
 $mainWhite: #eee;
-$darkBlue: rgb(76, 76, 253);
+$darkBlue: #5643fa;
+$lightBlue: #2998ff;
+
 $red: rgba(250, 23, 23, 0.932);
-$lightGrey:#f7f7f7;
+$lightGrey: #f7f7f7;
 $darkText: #003;
 
 // font
-$default-font:1.6rem;
+$default-font: 1.6rem;
 // GRID
-$grid-width:114rem;
-$grid-gap-vertical:6rem;
-$grid-gap-horizontal:5rem;
+$grid-width: 114rem;
+$grid-gap-vertical: 6rem;
+$grid-gap-horizontal: 5rem;
+
+// box shadow
+$box-shadow: 0 1.5rem 4rem rgba($darkText, 0.15);
