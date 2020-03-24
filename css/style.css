@@ -83,15 +83,24 @@
 
 .card {
   perspective: 150rem;
-  -moz-perspective: 150rem; }
+  -moz-perspective: 150rem;
+  position: relative; }
   .card-side {
     background-color: orangered;
     height: 40rem;
-    transition: all 0.8s; }
-    .card-side-front {
-      background-color: orangered; }
-  .card:hover .card-side {
+    transition: all 0.8s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden; }
+    .card-side-back {
+      background-color: green;
+      transform: rotateY(180deg); }
+  .card:hover .card-side-front {
     transform: rotateY(180deg); }
+  .card:hover .card-side-back {
+    transform: rotateY(0); }
 
 .row {
   max-width: 114rem;

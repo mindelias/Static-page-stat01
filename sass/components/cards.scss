@@ -1,21 +1,33 @@
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
+  position: relative;
 
   &-side {
     background-color: orangered;
     height: 40rem;
     transition: all 0.8s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    backface-visibility: hidden;
 
     &-front{
-        background-color: orangered;
+        // background-color: #eee;
     }
     &-back{
+      background-color: green;
+      transform: rotateY(180deg);
         
     }
   }
 
-  &:hover &-side {
+  &:hover &-side-front {
     transform: rotateY(180deg);
+  }
+
+  &:hover &-side-back {
+    transform: rotateY(0);
   }
 }
