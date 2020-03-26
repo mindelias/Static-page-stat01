@@ -28,6 +28,9 @@
 .u-margin-bottom-sm {
   margin-bottom: 1.5rem; }
 
+.u-margin-bottom-md {
+  margin-bottom: 3.8rem; }
+
 .btn-text {
   font-size: 1.6rem;
   color: #7ed56f;
@@ -106,7 +109,7 @@
     width: 100%;
     backface-visibility: hidden;
     border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 51, 0.15); }
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 51, 0.2); }
     .card-side-back {
       transform: rotateY(180deg); }
       .card-side-back-1 {
@@ -181,8 +184,8 @@
 .story {
   margin: 0 auto;
   width: 75%;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 51, 0.15);
-  background-color: #eee;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 51, 0.2);
+  background-color: rgba(238, 238, 238, 0.6);
   padding: 6rem;
   border-radius: 3px;
   font-size: 1.6rem;
@@ -223,6 +226,57 @@
     transform: translateX(-4rem) scale(1);
     filter: blur(3px) brightness(50%); }
 
+.bg-video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.3;
+  overflow: hidden; }
+  .bg-video-content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rbga(#eee, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 40%;
+  display: block;
+  transition: all 0.3s; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 51, 0.1);
+    border-bottom: 3px solid #7ed56f; }
+  .form__input:focus:invalid {
+    border-bottom: 3px solid #ff7730; }
+  .form__input::-webkit-input-placeholder {
+    color: #525050; }
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -262,8 +316,20 @@
     transform: skewY(7deg); }
 
 .section-stories {
-  padding: 15rem 0;
-  background-color: #eee; }
+  padding: 12rem 0;
+  position: relative; }
+
+.section-book {
+  padding: 12rem;
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+
+.book {
+  background-image: linear-gradient(105deg, rgba(238, 238, 238, 0.9) 0%, rgba(238, 238, 238, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
+  background-size: 100%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 51, 0.2);
+  border-radius: 3px;
+  height: 50rem;
+  padding: 4rem; }
 
 *,
 *::after,
