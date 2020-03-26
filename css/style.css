@@ -1,3 +1,14 @@
+.header-secondary {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: transparent; }
+  .header-secondary:hover {
+    transform: skewY(2deg) skewY(2deg);
+    text-shadow: 0.5rem 1rem 3rem rgba(0, 0, 51, 0.4); }
+
 .heading-tertiary {
   font-size: 1.6rem;
   font-weight: 700;
@@ -167,6 +178,51 @@
     font-size: 6rem;
     font-weight: 200; }
 
+.story {
+  margin: 0 auto;
+  width: 75%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 51, 0.15);
+  background-color: #eee;
+  padding: 6rem;
+  border-radius: 3px;
+  font-size: 1.6rem;
+  padding: 6rem;
+  transform: skewX(-12deg); }
+  .story-shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    background-color: lime;
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    transform: translate(-3rem) skewX(12deg);
+    position: relative; }
+  .story-text {
+    transform: skewX(10deg); }
+  .story-image {
+    height: 100%;
+    transform: translateX(-4rem) scale(1.4); }
+  .story-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    color: #22fc22;
+    transition: all 0.8s;
+    backface-visibility: hidden; }
+  .story:hover .story-caption {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  .story:hover .story-image {
+    transform: translateX(-4rem) scale(1);
+    filter: blur(3px) brightness(50%); }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -195,16 +251,6 @@
   background-color: #f7f7f7;
   padding: 15rem;
   margin-top: -20vh; }
-  .section-about .header-secondary {
-    font-size: 3rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    background-image: linear-gradient(to right, #7ed56f, #28b485);
-    -webkit-background-clip: text;
-    color: transparent; }
-    .section-about .header-secondary:hover {
-      transform: skewY(2deg) skewY(2deg);
-      text-shadow: 0.5rem 1rem 3rem rgba(0, 0, 51, 0.4); }
 
 .section-features {
   padding: 15rem 0;
@@ -214,6 +260,10 @@
   transform: skewY(-7deg); }
   .section-features > * {
     transform: skewY(7deg); }
+
+.section-stories {
+  padding: 15rem 0;
+  background-color: #eee; }
 
 *,
 *::after,
