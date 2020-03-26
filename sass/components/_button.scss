@@ -1,12 +1,11 @@
 .btn-text {
-
-    font-size: $default-font;
-    color: $lightGreen;
-    display: inline-block;
-    text-decoration: none;
-    border-bottom: 1px solid $lightGreen;
-    padding: 3px;
-    cursor: pointer;
+  font-size: $default-font;
+  color: $lightGreen;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid $lightGreen;
+  padding: 3px;
+  cursor: pointer;
 
   &:hover {
     background-color: $lightGreen;
@@ -19,6 +18,3 @@
     transform: translateY(-2px);
   }
 }
-
-
- 
