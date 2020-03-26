@@ -2,7 +2,7 @@
   background-color: $lightGrey;
   padding: 15rem;
   margin-top: -20vh;
-  }
+}
 
 .section-features {
   padding: 15rem 0;
@@ -20,8 +20,28 @@
   }
 }
 
-.section-stories{
-  padding: 15rem 0;
-  background-color: #eee;
+.section-stories {
+  padding: 12rem 0;
+  // background-color: #eee;
+  position: relative;
+}
 
+.section-book {
+  padding: 12rem;
+  background-image: linear-gradient(to right bottom, $lightGreen, $darkGreen);
+}
+
+.book {
+  background-image: linear-gradient(
+      105deg,
+      rgba($mainWhite, 0.9) 0%,
+      rgba($mainWhite, 0.9) 50%,
+      transparent 50%
+    ),
+    url(../img/nat-10.jpg);
+  background-size: 100%;
+  box-shadow: $box-shadow;
+  border-radius: 3px;
+  height: 50rem;
+  padding: 4rem;
 }

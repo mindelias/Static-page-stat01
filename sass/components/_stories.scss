@@ -2,7 +2,7 @@
   margin: 0 auto;
   width: 75%;
   box-shadow: $box-shadow;
-  background-color: $mainWhite;
+  background-color: rgba($mainWhite, 0.6);
   padding: 6rem;
   border-radius: 3px;
   font-size: $default-font;
@@ -47,6 +47,6 @@
   }
   &:hover &-image {
     transform: translateX(-4rem) scale(1);
-    filter:blur(3px) brightness(50%)
+    filter: blur(3px) brightness(50%);
   }
 }
