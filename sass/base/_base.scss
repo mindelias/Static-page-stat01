@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0px;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media (max-width: $tabLandscape) {
+    font-size: 60%;
+  }
+
+  @media (max-width: $tabPortrait) {
+    font-size: 50%;
+  }
+  @media (max-width: $xsPhone) {
+    font-size: 35%;
+  }
+  //   @media (max-width: $phone) {
+  //     font-size: 50%;
+  //   }
+
+  @media (min-width: $tabLandscape) {
+    font-size: 75%;
+  }
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  padding: 3rem;
+  box-sizing: border-box;
+
+  @media (max-width: $phone) {
+    padding: 0;
+  }
+}
