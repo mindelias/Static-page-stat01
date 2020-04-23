@@ -11,6 +11,7 @@ $lightBlue: #2998ff;
 $red: rgba(250, 23, 23, 0.932);
 $lightGrey: #f7f7f7;
 $darkText: #003;
+$darkBg: black;
 
 // font
 $default-font: 1.6rem;
@@ -20,4 +21,11 @@ $grid-gap-vertical: 6rem;
 $grid-gap-horizontal: 5rem;
 
 // box shadow
-$box-shadow: 0 1.5rem 4rem rgba($darkText, 0.2);
+$box-shadow: 0 1.5rem 4rem rgba($darkBg, 0.2);
+
+// media queries breakpoint
+$xsPhone: 31.125em;
+$phone: 37.5em;
+$tabPortrait: 56.25em;
+$tabLandscape: 75em;
+$bigDesktop: 112.5em;
