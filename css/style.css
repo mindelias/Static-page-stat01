@@ -42,6 +42,13 @@ body {
   .header-secondary:hover {
     transform: skewY(2deg) skewY(2deg);
     text-shadow: 0.5rem 1rem 3rem rgba(0, 0, 51, 0.4); }
+  @media (max-width: 56.25em) {
+    .header-secondary {
+      font-size: 2.5rem; } }
+  @media (max-width: 31.125em) {
+    .header-secondary {
+      font-size: 2.5rem;
+      margin-top: 2rem; } }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -58,6 +65,9 @@ body {
 
 .u-margin-bottom-lg {
   margin-bottom: 8rem; }
+  @media (max-width: 56.25em) {
+    .u-margin-bottom-lg {
+      margin-bottom: 3.5rem; } }
 
 .u-margin-bottom-sm {
   margin-bottom: 1.5rem; }
@@ -176,11 +186,6 @@ body {
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
-.section-tours {
-  background-color: #eee;
-  padding: 20rem 0 15rem 0rem;
-  margin-top: -10rem; }
-
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
@@ -275,21 +280,32 @@ body {
   padding: 6rem;
   border-radius: 3px;
   font-size: 1.6rem;
-  padding: 6rem;
   transform: skewX(-12deg); }
+  @media (max-width: 56.25em) {
+    .story {
+      width: 100%;
+      padding: 4rem; } }
+  @media (max-width: 37.5em) {
+    .story {
+      transform: skewX(0); } }
   .story-shape {
     width: 15rem;
     height: 15rem;
     float: left;
-    background-color: lime;
     shape-outside: circle(50% at 50% 50%);
     -webkit-shape-outside: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     -webkit-clip-path: circle(50% at 50% 50%);
     transform: translate(-3rem) skewX(12deg);
     position: relative; }
+    @media (max-width: 37.5em) {
+      .story-shape {
+        transform: translate(-3rem) skewX(0); } }
   .story-text {
     transform: skewX(10deg); }
+    @media (max-width: 37.5em) {
+      .story-text {
+        transform: skewX(0); } }
   .story-image {
     height: 100%;
     transform: translateX(-4rem) scale(1.4); }
@@ -338,9 +354,12 @@ body {
   background-color: rbga(#eee, 0.5);
   border: none;
   border-bottom: 3px solid transparent;
-  width: 40%;
+  width: 80%;
   display: block;
   transition: all 0.3s; }
+  @media (max-width: 56.25em) {
+    .form__input {
+      width: 100%; } }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 51, 0.1);
@@ -426,6 +445,9 @@ body {
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 6rem; }
+  @media (max-width: 56.25em) {
+    .row {
+      max-width: 45rem; } }
   .row::after {
     content: "";
     display: table;
@@ -434,7 +456,13 @@ body {
     float: left;
     padding: 2rem; }
     .row [class^="col-"]:not(:last-child) {
-      margin-right: 5rem; }
+      margin-bottom: 3.5rem; }
+      @media (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0; } }
+    @media (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 5rem) / 2); }
   .row .col-1-of-3 {
@@ -566,6 +594,10 @@ body {
   background-color: #f7f7f7;
   padding: 15rem;
   margin-top: -20vh; }
+  @media (max-width: 56.25em) {
+    .section-about {
+      padding-bottom: 40rem;
+      padding-top: 20rem; } }
 
 .section-features {
   padding: 15rem 0;
@@ -576,9 +608,20 @@ body {
   .section-features > * {
     transform: skewY(7deg); }
 
+.section-tours {
+  background-color: #eee;
+  padding: 20rem 0 15rem 0rem;
+  margin-top: -10rem; }
+  @media (max-width: 56.25em) {
+    .section-tours {
+      padding: 13rem 0 15rem 0rem; } }
+
 .section-stories {
   padding: 12rem 0;
   position: relative; }
+  @media (max-width: 56.25em) {
+    .section-stories {
+      padding: 7rem 0rem; } }
 
 .section-book {
   padding: 12rem;
@@ -586,11 +629,22 @@ body {
 
 .book {
   background-image: linear-gradient(105deg, rgba(238, 238, 238, 0.9) 0%, rgba(238, 238, 238, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
-  background-size: 100%;
+  background-size: cover;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
   border-radius: 3px;
-  height: 50rem;
   padding: 4rem; }
+  @media (max-width: 75em) {
+    .book {
+      background-image: linear-gradient(105deg, rgba(238, 238, 238, 0.9) 0%, rgba(238, 238, 238, 0.9) 70%, transparent 70%), url(../img/nat-10.jpg); } }
+  @media (max-width: 56.25em) {
+    .book {
+      background-image: linear-gradient(105deg, rgba(238, 238, 238, 0.9) 0%, rgba(238, 238, 238, 0.9) 100%, transparent 100%), url(../img/nat-10.jpg); } }
+  .book__form {
+    width: 50%;
+    padding: 2rem; }
+    @media (max-width: 56.25em) {
+      .book__form {
+        width: 100%; } }
 
 .header {
   height: 95vh;
@@ -599,6 +653,10 @@ body {
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }
+  @media (max-width: 37.5em) {
+    .header {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
   .header_logo-box {
     position: absolute;
     top: 4rem;
@@ -622,9 +680,9 @@ body {
       animation: moveInLeft 2s ease-in; }
     .header_primary-sub {
       display: block;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       font-weight: 400;
-      letter-spacing: 1rem;
+      letter-spacing: .5rem;
       text-transform: capitalize;
       animation: moveInRight 2s ease-out;
       margin-bottom: 20px; }

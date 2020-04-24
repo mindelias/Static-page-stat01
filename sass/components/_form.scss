@@ -12,9 +12,12 @@
     background-color: rbga($mainWhite, 0.5);
     border: none;
     border-bottom: 3px solid transparent;
-    width: 40%;
+    width: 80%;
     display: block;
     transition: all 0.3s;
+    @media (max-width: $tabPortrait) {
+      width: 100%;
+    }
 
     &:focus {
       outline: none;
@@ -24,7 +27,7 @@
 
     &:focus:invalid {
       border-bottom: 3px solid $darkOrange;
-    } 
+    }
 
     &::-webkit-input-placeholder {
       color: rgb(82, 80, 80);

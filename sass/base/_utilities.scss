@@ -3,6 +3,9 @@
 }
 .u-margin-bottom-lg {
   margin-bottom: 8rem;
+  @media(max-width:$tabPortrait){
+    margin-bottom: 3.5rem; 
+  }
 }
 .u-margin-bottom-sm {
   margin-bottom: 1.5rem;

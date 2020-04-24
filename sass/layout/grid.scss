@@ -5,6 +5,10 @@
   &:not(:last-child) {
     margin-bottom: $grid-gap-vertical;
   }
+  @media (max-width: $tabPortrait) {
+    max-width: 45rem;
+  }
+
   &::after {
     content: "";
     display: table;
@@ -14,9 +18,16 @@
     float: left;
     padding: 2rem;
     &:not(:last-child) {
-      margin-right: $grid-gap-horizontal;
+      margin-bottom: $grid-gap-vertical-sm;
+      @media (max-width: $tabPortrait) {
+        margin-right: 0;
+      }
+    }
+    @media (max-width: $tabPortrait) {
+      width: 100% !important;
     }
   }
+
   .col-1-of-2 {
     width: calc((100% - #{$grid-gap-horizontal}) / 2);
   }
